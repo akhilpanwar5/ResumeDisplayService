@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Panwar - Backend Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: #0c0c0c;
+            color: #00ff00;
+            line-height: 1.3;
+            padding: 15px;
+            min-height: 100vh;
+        }
+        
+        .terminal {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: #000;
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.2);
+            overflow: hidden;
+            page-break-inside: avoid;
+        }
+        
+        .terminal-header {
+            background: #333;
+            padding: 8px 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .terminal-button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        .close { background: #ff5f57; }
+        .minimize { background: #ffbd2e; }
+        .maximize { background: #28ca42; }
+        
+        .terminal-title {
+            color: #fff;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+        
+        .terminal-body {
+            padding: 15px;
+            background: #000;
+            font-size: 11px;
+        }
+        
+        .prompt {
+            color: #00ff00;
+            margin-bottom: 3px;
+        }
+        
+        .command {
+            color: #ffffff;
+            display: inline;
+        }
+        
+        .output {
+            color: #00ff00;
+            margin-bottom: 12px;
+            white-space: pre-line;
+        }
+        
+        .section-header {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 12px;
+            margin: 12px 0 6px 0;
+            text-transform: uppercase;
+        }
+        
+        .blink {
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .highlight {
+            color: #ffff00;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            color: #00bfff;
+        }
+        
+        .achievement {
+            color: #ffa500;
+        }
+        
+        .error-text {
+            color: #ff4444;
+        }
+        
+        .success-text {
+            color: #44ff44;
+        }
+        
+        .two-column {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .left-column {
+            flex: 1;
+        }
+        
+        .right-column {
+            flex: 1;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .terminal {
+                border: none;
+                box-shadow: none;
+                max-width: none;
+            }
+            
+            .terminal-header {
+                display: none;
+            }
+            
+            .terminal-body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-button close"></div>
+            <div class="terminal-button minimize"></div>
+            <div class="terminal-button maximize"></div>
+            <div class="terminal-title">akhil@backend-dev:~$</div>
+        </div>
+        
+        <div class="terminal-body">
+            <!-- Header Info -->
+            <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">whoami && cat /dev/contact</span>
+
+<span class="highlight">AKHIL PANWAR</span> - Software Engineer | Backend Developer
+<span class="contact-info">📧 akhilpanwar5@gmail.com | 📱 +91 9466732329 | 📍 Noida, UP-201310</span>
+<span class="contact-info">🔗 linkedin.com/in/akhilpanwar | Status: <span class="success-text">[READY_FOR_DEPLOYMENT]</span></span>
+</div>
+
+            <!-- Professional Summary -->
+            <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">cat /profile/summary.txt</span>
+
+<span class="section-header">// PROFESSIONAL PROFILE</span>
+Backend Developer with <span class="highlight">2+ years</span> of proven experience delivering project-driven, 
+end-to-end solutions in <span class="success-text">Java, Spring Boot, and C++</span>. Recognized for full ownership 
+of tasks, strong problem-solving, and client-facing communication, ensuring features 
+are delivered with both <span class="highlight">technical depth and business impact</span>.
+</div>
+
+            <!-- Two Column Layout -->
+            <div class="two-column">
+                <div class="left-column">
+                    <!-- Experience Section -->
+                    <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">history --work-experience</span>
+
+<span class="section-header">// WORK EXPERIENCE</span>
+
+<span class="highlight">NEWGEN SOFTWARE</span> | July 2023 - Present
+Software Engineer (Team CCM) | Noida, India
+
+<span class="achievement">🔗 Social Integration:</span>
+├─ Integrated Facebook & Twitter APIs with JWT authentication
+├─ Developed post, tweet & DM publishing functionality  
+├─ Reduced response time by <span class="success-text">30%</span> & boosted client feedback by <span class="success-text">20%</span>
+
+<span class="achievement">🗑️ Purge Service:</span>
+├─ Designed flexible data deletion for multiple channels
+├─ Supports email, archives, WhatsApp, Twitter, Facebook
+├─ Enhanced client-specific data management control
+
+<span class="achievement">⚡ Code Optimization:</span>
+├─ Improved gallery load times by <span class="highlight">10X</span>
+├─ Multithreading for PDF generation → <span class="success-text">60% faster processing</span>
+├─ Reduced support tickets by <span class="success-text">30%</span>
+
+<span class="achievement">🛡️ Security Framework:</span>
+├─ Implemented whitelisting in <span class="highlight">40+ modules</span>
+├─ Restricted unauthorized API access
+├─ ISO 27001, SOC 2, OWASP compliance support
+
+<span class="achievement">🚀 JDK Migration:</span>
+├─ Migrated <span class="highlight">45+ modules</span> from JDK 8 to 17
+├─ JAX-RS and microservices included
+├─ Deployment time improved by <span class="success-text">150%</span>
+
+<span class="achievement">🧪 Test Automation:</span>
+├─ JUnit integration testing automation
+├─ <span class="success-text">87% test coverage</span> achieved
+├─ 20% accuracy boost, 30% efficiency gain
+</div>
+                </div>
+                
+                <div class="right-column">
+                    <!-- Skills Section -->
+                    <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">cat /skills/stack.json</span>
+
+<span class="section-header">// TECHNICAL ARSENAL</span>
+
+<span class="highlight">Programming:</span>
+Java ★★★★★ | C++ ★★★★☆ | DSA ★★★★★
+
+<span class="highlight">Frameworks:</span>
+Spring Boot ★★★★★ | J2EE ★★★★☆
+
+<span class="highlight">Databases:</span>
+PostgreSQL ★★★★★ | Oracle ★★★★☆ | SQL ★★★★★
+
+<span class="highlight">Tools & DevOps:</span>
+Docker ★★★★☆ | Kubernetes ★★★☆☆
+JUnit ★★★★☆ | JMeter ★★★☆☆
+IntelliJ IDEA ★★★★★ | Eclipse ★★★★☆
+GitHub ★★★★★ | Jira ★★★★☆
+JBoss Server ★★★☆☆ | Bugzilla ★★★☆☆
+</div>
+
+                    <!-- Projects -->
+                    <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">ls /projects/</span>
+
+<span class="section-header">// PROJECT PORTFOLIO</span>
+
+<span class="highlight">paymess-app/</span>
+├─ Tech: Java, J2EE, CSS, HTML
+├─ Features: Mess bill viewing, rebate requests
+└─ Impact: Streamlined student payment processes
+
+<span class="highlight">backdoor-spyman/</span>
+├─ Type: CLI tool for network administration
+├─ Features: Remote machine control, real-time file access
+└─ Formats: PDF, JPEG, TXT support
+</div>
+
+                    <!-- Education & Awards -->
+                    <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">cat /education/degree.txt</span>
+
+<span class="section-header">// EDUCATION</span>
+
+<span class="highlight">B.Tech CSE</span> | Chandigarh University, Punjab
+CGPA: <span class="success-text">7.6</span> | Year: 2019-2023
+
+<span class="highlight">CBSE 12th</span> | I.B School, Rohtak | <span class="success-text">78%</span>
+<span class="highlight">CBSE 10th</span> | I.B School, Rohtak | <span class="success-text">83%</span>
+</div>
+
+                    <!-- Awards -->
+                    <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">ls /awards/</span>
+
+<span class="section-header">// ACHIEVEMENTS UNLOCKED</span>
+
+<span class="achievement">🏆 HighFive Award</span> - Exceptional PROD support
+<span class="achievement">🤝 Kindness & Kudos Award</span> - Outstanding teamwork  
+<span class="achievement">🥇 Rank 1</span> - InterviewBit University Leaderboard (Batch-23)
+</div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="output">
+<span class="prompt">akhil@backend-dev:~$</span> <span class="command">echo "Ready for new challenges!" && systemctl status developer</span>
+
+<span class="success-text">Ready for new challenges!</span> 🚀 | Next Task: <span class="achievement">[JOIN_YOUR_TEAM]</span>
+
+<span class="prompt">akhil@backend-dev:~$</span> <span class="blink">█</span>
+</div>
+        </div>
+    </div>
+
+    <script>
+        // Print-friendly adjustments
+        window.addEventListener('beforeprint', function() {
+            document.body.style.background = 'white';
+            document.querySelector('.terminal').style.border = 'none';
+            document.querySelector('.terminal').style.boxShadow = 'none';
+        });
+        
+        window.addEventListener('afterprint', function() {
+            document.body.style.background = '#0c0c0c';
+            document.querySelector('.terminal').style.border = '2px solid #333';
+            document.querySelector('.terminal').style.boxShadow = '0 0 30px rgba(0, 255, 0, 0.2)';
+        });
+    </script>
+</body>
+</html>
